@@ -4,6 +4,7 @@ import GlobalStyle from "../styles/GlobalStyle";
 import history from "../history";
 import Home from "../pages/Home";
 import Likes from "../pages/Likes";
+import Header from "./Header";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <GlobalStyle />
             <Router history={history}>
                 <Switch>
+                    <Header />
                     <Route path="/" exact component={Home} />
                     <Route path="/likes" exact component={Likes} />
                 </Switch>
