@@ -24,12 +24,13 @@ const GlobalStyle = createGlobalStyle`
  
 
     body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.6;
         /* background-color: #F0F1F6; */
         background-color: #F5F6FA;
+        /* background-color: #212121; */
     }
 
     ul {
