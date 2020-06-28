@@ -19,7 +19,6 @@ export default (state = getInitialState(), action) => {
             };
 
         case actionTypes.FETCH_STORY_IDS_SUCCESS:
-            console.log(state)
             return {
                 ...state,
                 storyIds: action.payload,

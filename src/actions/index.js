@@ -36,10 +36,8 @@ export const setLike = (payload = {}) => {
     let newLikedStories = [];
     if (liked) {
         newLikedStories = [...likedStories, story];
-        console.log(newLikedStories);
     } else {
         newLikedStories = likedStories.filter(item => item.id !== id);
-        console.log(newLikedStories);
     }
 
 

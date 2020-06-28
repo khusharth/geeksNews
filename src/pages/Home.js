@@ -10,9 +10,7 @@ import { hasMoreStoriesSelector } from '../reducers/selector';
 const Home = ({ fetchStoryIDs, fetchStories, storyIds, page, isFetching, stories, hasMoreStories, isLiked }) => {
 
     const fetchStory = () => {
-        console.log('called')
         if (!isFetching) {
-            console.log(storyIds);
             fetchStories({ storyIds, page });
         }
     }
@@ -22,8 +20,6 @@ const Home = ({ fetchStoryIDs, fetchStories, storyIds, page, isFetching, stories
             fetchStoryIDs();
         }
     }, []);
-
-    console.log(stories.length)
 
     return (
         <main>
@@ -44,7 +40,7 @@ const Home = ({ fetchStoryIDs, fetchStories, storyIds, page, isFetching, stories
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
+
     return {
         stories: state.story.stories,
         page: state.story.page,

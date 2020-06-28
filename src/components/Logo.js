@@ -4,7 +4,11 @@ import logo from "../assets/logo.png";
 
 const ImageSpan = styled.span`
     & img {
-        width: 220px;
+        width: 240px;
+
+        @media only screen and (max-width: 600px) {
+            width: 220px;
+        }
 
         @media only screen and (max-width: 600px) {
             width: 190px;

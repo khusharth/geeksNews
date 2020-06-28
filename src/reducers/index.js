@@ -3,7 +3,7 @@ import themeReducer from "./themeReducer";
 import storyReducer from "./storyReducer";
 
 export const saveToLocalStorage = (state) => {
-    console.log('saving...');
+    // console.log('saving...');
     // state.story.stories = defaultArray;
     try {
         const serialzedState = JSON.stringify(state);
@@ -14,7 +14,7 @@ export const saveToLocalStorage = (state) => {
 }
 
 export const loadFromLocalStorage = () => {
-    console.log('loading...');
+    // console.log('loading...');
     try {
         const serialzedState = localStorage.getItem('state');
         if (serialzedState === null) return undefined;
