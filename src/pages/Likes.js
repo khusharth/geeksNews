@@ -1,11 +1,20 @@
 import React from "react";
+import NewsList from "../components/NewsList";
+import { connect } from 'react-redux';
 
-const Likes = () => {
+const Likes = ({ likedStories }) => {
     return (
-        <>
-            <div>Likes</div>
-        </>
+        <main>
+            <NewsList stories={likedStories} />
+        </main>
     );
 };
 
-export default Likes;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        likedStories: state.story.likedStories,
+    }
+};
+
+export default connect(mapStateToProps)(Likes);
