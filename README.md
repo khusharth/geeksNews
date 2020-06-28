@@ -5,7 +5,7 @@
      <a href="https://app.netlify.com/sites/geeksnews/deploys"><img src="https://api.netlify.com/api/v1/badges/9c7291c3-b86a-409e-996b-eed30f310f10/deploy-status" alt="Netlify Status"></a>
 
 </p>
-A web app which shows the top news :newspaper: realted to computer science and entrepreneurship from the Hacker News API. :computer:
+A web app which shows the top news :newspaper: related to computer science and entrepreneurship from the Hacker News API. :computer:
  
 
 ## :film_projector: DEMO
