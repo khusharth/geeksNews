@@ -5,7 +5,8 @@ const Button = styled.button`
     color: rgb(255,255,255);
     border: none;
     font-weight: 500;
-    background-image: linear-gradient(to right, #7A00FF, #9533FF);
+    /* background-image: linear-gradient(to right, #7A00FF, #9533FF); */
+    background-image: linear-gradient(to right, #8c22ff, #b877ff);
     padding: 1.2rem 1.5rem;
     border-radius: 50px;
     border-bottom: 2px solid transparent;
