@@ -6,9 +6,9 @@ import thunk from 'redux-thunk';
 import App from "./components/App";
 import reducers, { saveToLocalStorage, loadFromLocalStorage } from "./reducers";
 
-const persistedStore = loadFromLocalStorage();
-const store = createStore(reducers, persistedStore, applyMiddleware(thunk));
-store.subscribe(() => saveToLocalStorage(store.getState()));
+// const persistedStore = loadFromLocalStorage();
+const store = createStore(reducers, applyMiddleware(thunk));
+// store.subscribe(() => saveToLocalStorage(store.getState()));
 
 ReactDOM.render(
     <Provider store={store}>
